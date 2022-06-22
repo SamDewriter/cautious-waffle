@@ -12,7 +12,6 @@ class Post(models.Model):
         ("draft", "Draft"),
         ("published", "Published")
     )
-
     # DB Fields
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=300, unique=True, editable=False)
